@@ -24,8 +24,8 @@ public class Cube : MonoBehaviour
         rb.velocity = direction * speed;
     }
 
-    public virtual void DisplayColor()
+    public virtual void DisplayStatement()
     {
-
+        Debug.Log("Hi! I'm " + color + "!");
     }
 }

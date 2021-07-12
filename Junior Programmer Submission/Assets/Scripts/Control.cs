@@ -22,10 +22,11 @@ public class Control : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit))
         {
-            Cube cube = hit.collider.GetComponent<Cube>();
+            var cube = hit.collider.GetComponent<Cube>();
             if(cube != null)
             {
                 selectedCube = cube;
+                selectedCube.DisplayStatement();
             }
         }
     }
@@ -54,9 +55,8 @@ public class Control : MonoBehaviour
 
     void AxisMove()
     {
-        float horizontalInput, verticalInput;
-        horizontalInput = Input.GetAxisRaw("Horizontal");
-        verticalInput = Input.GetAxisRaw("Vertical");
+        float horizontalInput = Input.GetAxisRaw("Horizontal");
+        float verticalInput = Input.GetAxisRaw("Vertical");
 
         selectedCube.Move(horizontalInput, verticalInput);
     }
