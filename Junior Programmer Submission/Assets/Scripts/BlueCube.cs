@@ -1,15 +1,15 @@
 using UnityEngine;
 
-public class GreenCube : Cube
+public class BlueCube : Cube
 {
     void Start()
     {
-        color = "Green";
+        color = "Blue";
     }
 
     public override void DisplayStatement()
     {
         base.DisplayStatement();
-        cubeText.text += "I'm the first cube!";
+        cubeText.text += "I'm the faster cube!";
     }
 }
