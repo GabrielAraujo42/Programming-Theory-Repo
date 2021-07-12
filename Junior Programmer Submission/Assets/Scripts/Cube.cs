@@ -1,15 +1,18 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Cube : MonoBehaviour
 {
     public string color { get; protected set; }
 
     protected Rigidbody rb;
+    protected Text cubeText;
     [SerializeField] protected float speed = 3f;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        cubeText = GameObject.FindGameObjectWithTag("CubeText").GetComponent<Text>();
     }
 
     public virtual void Move(Vector3 position)
@@ -24,8 +27,8 @@ public class Cube : MonoBehaviour
         rb.velocity = direction * speed;
     }
 
-    public virtual void DisplayColor()
+    public virtual void DisplayStatement()
     {
-
+        cubeText.text = "Hi! I'm " + color + "!\n";
     }
 }
