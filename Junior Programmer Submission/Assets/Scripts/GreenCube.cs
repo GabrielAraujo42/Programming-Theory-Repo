@@ -10,6 +10,6 @@ public class GreenCube : Cube
     public override void DisplayStatement()
     {
         base.DisplayStatement();
-        Debug.Log("I'm the first cube!");
+        cubeText.text += "I'm the first cube!";
     }
 }
