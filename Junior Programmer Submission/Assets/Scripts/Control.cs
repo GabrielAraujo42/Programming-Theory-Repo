@@ -16,6 +16,7 @@ public class Control : MonoBehaviour
         }
     }
 
+    // ABSTRACTION
     void HandleSelection()
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -31,6 +32,7 @@ public class Control : MonoBehaviour
         }
     }
 
+    // ABSTRACTION
     void HandleMovement()
     {
         if (Input.GetMouseButton(1))
@@ -43,6 +45,7 @@ public class Control : MonoBehaviour
         }
     }
 
+    // ABSTRACTION
     void ClickMove()
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -53,6 +56,7 @@ public class Control : MonoBehaviour
         }
     }
 
+    // ABSTRACTION
     void AxisMove()
     {
         float horizontalInput = Input.GetAxisRaw("Horizontal");

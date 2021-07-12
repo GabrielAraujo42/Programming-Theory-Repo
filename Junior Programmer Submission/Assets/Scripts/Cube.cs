@@ -3,6 +3,7 @@ using UnityEngine.UI;
 
 public class Cube : MonoBehaviour
 {
+    // ENCAPSULATION
     public string color { get; protected set; }
 
     protected Rigidbody rb;

@@ -1,5 +1,6 @@
 using UnityEngine;
 
+// INHERITANCE
 public class GreenCube : Cube
 {
     void Start()
@@ -7,6 +8,7 @@ public class GreenCube : Cube
         color = "Green";
     }
 
+    // POLYMORPHISM
     public override void DisplayStatement()
     {
         base.DisplayStatement();
