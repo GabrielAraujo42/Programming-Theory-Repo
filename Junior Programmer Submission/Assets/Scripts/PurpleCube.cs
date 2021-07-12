@@ -4,7 +4,7 @@ public class PurpleCube : Cube
 {
     void Start()
     {
-        color = "Green";
+        color = "Purple";
     }
 
     public override void Move(float horizontalInput, float verticalInput)
